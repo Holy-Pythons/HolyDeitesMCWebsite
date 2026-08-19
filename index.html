@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Holy Deities MC | GTA V Motorcycle Club</title>
+  <title>Holy Deities MC | GTA V Outlaw Motorcycle Club</title>
   <style>
     :root {
       --bg-color: #0b0b0b;
@@ -13,6 +13,7 @@
       --text: #e5e5e5;
       --muted: #a3a3a3;
       --border: #262626;
+      --warning: #eab308;
     }
 
     * {
@@ -121,6 +122,30 @@
       letter-spacing: 1px;
     }
 
+    .schedule-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .schedule-header h2 {
+      margin-bottom: 0;
+    }
+
+    .notice-tag {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.85rem;
+      color: var(--warning);
+      border: 1px solid var(--warning);
+      padding: 4px 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background-color: rgba(234, 179, 8, 0.05);
+    }
+
     p, li {
       font-family: 'Arial', sans-serif;
     }
@@ -210,7 +235,10 @@
     </section>
 
     <section>
-      <h2>Weekly Schedule</h2>
+      <div class="schedule-header">
+        <h2>Weekly Schedule</h2>
+        <span class="notice-tag">⚠️ Schedule Subject To Change • Changes May Apply</span>
+      </div>
       <div class="grid">
         <div class="card">
           <h3>MON • Business Grind</h3>
