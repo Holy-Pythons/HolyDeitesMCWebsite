@@ -27,19 +27,19 @@
 
     body {
       background-color: var(--bg-color);
-      /* Repeating Vice City Palms + Los Santos Skyline across the entire background */
+      /* Dense overlapping Palm Trees + Los Santos Skyline across the whole background */
       background-image: 
-        /* Repeating Vice City Palm Trees Pattern */
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 800' fill='rgba(255, 42, 133, 0.05)'%3E%3Cpath d='M10 800 C 30 600, 20 400, 50 150 C 0 130, -20 100, 5 70 C 25 100, 45 120, 50 140 C 65 90, 85 70, 110 85 C 90 110, 70 125, 55 145 C 80 140, 110 150, 120 180 C 95 180, 70 165, 55 155 C 65 200, 80 230, 95 250 C 75 230, 60 200, 50 160 C 20 400, 30 600, 10 800 Z'/%3E%3C/svg%3E"),
-        /* Repeating Los Santos Skyline Pattern */
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 800' fill='rgba(0, 240, 255, 0.04)'%3E%3Cpath d='M 150 800 L 150 500 L 170 500 L 170 420 L 190 420 L 190 350 L 210 320 L 230 320 L 250 350 L 250 420 L 270 420 L 270 500 L 290 500 L 290 800 L 320 800 L 320 580 L 360 580 L 360 800 Z M 50 800 L 50 650 L 100 650 L 100 800 Z'/%3E%3C/svg%3E"),
+        /* Foreground Dense Palm Trees Layer */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 800' fill='rgba(255, 42, 133, 0.07)'%3E%3Cpath d='M10 800 C 30 600, 20 400, 50 150 C 0 130, -20 100, 5 70 C 25 100, 45 120, 50 140 C 65 90, 85 70, 110 85 C 90 110, 70 125, 55 145 C 80 140, 110 150, 120 180 C 95 180, 70 165, 55 155 C 65 200, 80 230, 95 250 C 75 230, 60 200, 50 160 C 20 400, 30 600, 10 800 Z M210 800 C 230 550, 210 380, 240 180 C 190 160, 170 130, 195 100 C 215 130, 235 150, 240 170 C 255 120, 275 100, 300 115 C 280 140, 260 155, 245 175 C 270 170, 300 180, 310 210 C 285 210, 260 195, 245 185 C 255 230, 270 260, 285 280 C 265 260, 250 230, 240 190 C 210 380, 230 550, 210 800 Z'/%3E%3C/svg%3E"),
+        /* Background Skyline Layer with Extra Palms Overlaid Direct in SVG */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 800' fill='rgba(0, 240, 255, 0.05)'%3E%3Cpath d='M 150 800 L 150 500 L 170 500 L 170 420 L 190 420 L 190 350 L 210 320 L 230 320 L 250 350 L 250 420 L 270 420 L 270 500 L 290 500 L 290 800 L 320 800 L 320 580 L 360 580 L 360 800 Z M 50 800 L 50 650 L 100 650 L 100 800 Z M 380 800 L 380 620 L 440 620 L 440 800 Z M390 800 C 405 600, 395 400, 420 220 C 380 200, 360 170, 385 140 C 400 170, 415 190, 420 210 C 435 170, 450 150, 470 165 C 455 185, 440 200, 428 218 C 448 213, 470 223, 480 248 C 460 248, 440 235, 428 228 C 435 265, 448 290, 460 305 C 445 290, 432 265, 425 232 C 400 400, 405 600, 390 800 Z'/%3E%3C/svg%3E"),
         radial-gradient(circle at 20% 20%, rgba(255, 42, 133, 0.18) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(0, 240, 255, 0.15) 0%, transparent 50%),
         linear-gradient(180deg, #09030f 0%, #150926 50%, #0d0614 100%);
       background-attachment: fixed;
       background-repeat: repeat-x, repeat-x, no-repeat, no-repeat, no-repeat;
       background-position: left bottom, left bottom, center center, center center, center center;
-      background-size: 260px auto, 380px auto, auto, auto, auto;
+      background-size: 320px auto, 420px auto, auto, auto, auto;
       color: var(--text);
       line-height: 1.6;
       padding: 20px;
