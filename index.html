@@ -7,7 +7,7 @@
   <style>
     :root {
       --bg-color: #0d0614;
-      --card-bg: rgba(23, 13, 38, 0.85);
+      --card-bg: rgba(23, 13, 38, 0.88);
       --discord-purple: #5865F2;
       --instagram-pink: #E1306C;
       --text: #f3e8ff;
@@ -27,15 +27,19 @@
 
     body {
       background-color: var(--bg-color);
-      /* GTA 6 Vice City Sunset Gradient Background + SVG Palm Tree Pattern */
+      /* Combined Vice City Palm Trees (Left) + Los Santos Skyline (Right) + Neon Sunset Gradient */
       background-image: 
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 100 100' fill='rgba(255, 42, 133, 0.04)'%3E%3Cpath d='M50 90 Q 48 65 45 40 Q 30 35 15 45 Q 25 30 40 35 Q 35 15 50 10 Q 65 15 60 35 Q 75 30 85 45 Q 70 35 55 40 Q 52 65 50 90 Z'/%3E%3C/svg%3E"),
-        radial-gradient(circle at 10% 20%, rgba(255, 42, 133, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(0, 240, 255, 0.12) 0%, transparent 40%),
+        /* Vice City Palm Tree Silhouette (Left Edge) */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 800' fill='rgba(255, 42, 133, 0.08)'%3E%3Cpath d='M10 800 C 30 600, 20 400, 50 150 C 0 130, -20 100, 5 70 C 25 100, 45 120, 50 140 C 65 90, 85 70, 110 85 C 90 110, 70 125, 55 145 C 80 140, 110 150, 120 180 C 95 180, 70 165, 55 155 C 65 200, 80 230, 95 250 C 75 230, 60 200, 50 160 C 20 400, 30 600, 10 800 Z'/%3E%3C/svg%3E"),
+        /* Los Santos Skyline Silhouette (Right Edge - Featuring Maze Bank Tower) */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 800' fill='rgba(0, 240, 255, 0.06)'%3E%3Cpath d='M 150 800 L 150 500 L 170 500 L 170 420 L 190 420 L 190 350 L 210 320 L 230 320 L 250 350 L 250 420 L 270 420 L 270 500 L 290 500 L 290 800 L 320 800 L 320 580 L 360 580 L 360 800 Z M 50 800 L 50 650 L 100 650 L 100 800 Z'/%3E%3C/svg%3E"),
+        radial-gradient(circle at 10% 20%, rgba(255, 42, 133, 0.18) 0%, transparent 45%),
+        radial-gradient(circle at 90% 80%, rgba(0, 240, 255, 0.15) 0%, transparent 45%),
         linear-gradient(180deg, #09030f 0%, #150926 50%, #0d0614 100%);
       background-attachment: fixed;
-      background-repeat: repeat, no-repeat, no-repeat, no-repeat;
-      background-position: center center;
+      background-repeat: no-repeat;
+      background-position: left center, right center, center center, center center, center center;
+      background-size: 250px auto, 320px auto, auto, auto, auto;
       color: var(--text);
       line-height: 1.6;
       padding: 20px;
@@ -189,7 +193,7 @@
       background-color: var(--card-bg);
       border: 1px solid var(--border);
       padding: 25px;
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(6px);
       box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     }
 
@@ -235,7 +239,7 @@
       padding: 15px 20px;
       margin-bottom: 10px;
       color: var(--text);
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(6px);
     }
 
     .laws-list strong {
@@ -268,7 +272,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 10px;
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(6px);
     }
 
     .hierarchy-role {
