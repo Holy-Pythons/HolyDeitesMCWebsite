@@ -27,19 +27,19 @@
 
     body {
       background-color: var(--bg-color);
-      /* Combined Vice City Palm Trees (Left) + Los Santos Skyline (Right) + Neon Sunset Gradient */
+      /* Repeating Vice City Palms + Los Santos Skyline across the entire background */
       background-image: 
-        /* Vice City Palm Tree Silhouette (Left Edge) */
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 800' fill='rgba(255, 42, 133, 0.08)'%3E%3Cpath d='M10 800 C 30 600, 20 400, 50 150 C 0 130, -20 100, 5 70 C 25 100, 45 120, 50 140 C 65 90, 85 70, 110 85 C 90 110, 70 125, 55 145 C 80 140, 110 150, 120 180 C 95 180, 70 165, 55 155 C 65 200, 80 230, 95 250 C 75 230, 60 200, 50 160 C 20 400, 30 600, 10 800 Z'/%3E%3C/svg%3E"),
-        /* Los Santos Skyline Silhouette (Right Edge - Featuring Maze Bank Tower) */
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 800' fill='rgba(0, 240, 255, 0.06)'%3E%3Cpath d='M 150 800 L 150 500 L 170 500 L 170 420 L 190 420 L 190 350 L 210 320 L 230 320 L 250 350 L 250 420 L 270 420 L 270 500 L 290 500 L 290 800 L 320 800 L 320 580 L 360 580 L 360 800 Z M 50 800 L 50 650 L 100 650 L 100 800 Z'/%3E%3C/svg%3E"),
-        radial-gradient(circle at 10% 20%, rgba(255, 42, 133, 0.18) 0%, transparent 45%),
-        radial-gradient(circle at 90% 80%, rgba(0, 240, 255, 0.15) 0%, transparent 45%),
+        /* Repeating Vice City Palm Trees Pattern */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 800' fill='rgba(255, 42, 133, 0.05)'%3E%3Cpath d='M10 800 C 30 600, 20 400, 50 150 C 0 130, -20 100, 5 70 C 25 100, 45 120, 50 140 C 65 90, 85 70, 110 85 C 90 110, 70 125, 55 145 C 80 140, 110 150, 120 180 C 95 180, 70 165, 55 155 C 65 200, 80 230, 95 250 C 75 230, 60 200, 50 160 C 20 400, 30 600, 10 800 Z'/%3E%3C/svg%3E"),
+        /* Repeating Los Santos Skyline Pattern */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 800' fill='rgba(0, 240, 255, 0.04)'%3E%3Cpath d='M 150 800 L 150 500 L 170 500 L 170 420 L 190 420 L 190 350 L 210 320 L 230 320 L 250 350 L 250 420 L 270 420 L 270 500 L 290 500 L 290 800 L 320 800 L 320 580 L 360 580 L 360 800 Z M 50 800 L 50 650 L 100 650 L 100 800 Z'/%3E%3C/svg%3E"),
+        radial-gradient(circle at 20% 20%, rgba(255, 42, 133, 0.18) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(0, 240, 255, 0.15) 0%, transparent 50%),
         linear-gradient(180deg, #09030f 0%, #150926 50%, #0d0614 100%);
       background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-position: left center, right center, center center, center center, center center;
-      background-size: 250px auto, 320px auto, auto, auto, auto;
+      background-repeat: repeat-x, repeat-x, no-repeat, no-repeat, no-repeat;
+      background-position: left bottom, left bottom, center center, center center, center center;
+      background-size: 260px auto, 380px auto, auto, auto, auto;
       color: var(--text);
       line-height: 1.6;
       padding: 20px;
