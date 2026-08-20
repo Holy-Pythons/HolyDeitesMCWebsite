@@ -27,12 +27,15 @@
 
     body {
       background-color: var(--bg-color);
-      /* GTA 6 Vice City Sunset Gradient Background */
+      /* GTA 6 Vice City Sunset Gradient Background + SVG Palm Tree Pattern */
       background-image: 
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 100 100' fill='rgba(255, 42, 133, 0.04)'%3E%3Cpath d='M50 90 Q 48 65 45 40 Q 30 35 15 45 Q 25 30 40 35 Q 35 15 50 10 Q 65 15 60 35 Q 75 30 85 45 Q 70 35 55 40 Q 52 65 50 90 Z'/%3E%3C/svg%3E"),
         radial-gradient(circle at 10% 20%, rgba(255, 42, 133, 0.15) 0%, transparent 40%),
         radial-gradient(circle at 90% 80%, rgba(0, 240, 255, 0.12) 0%, transparent 40%),
         linear-gradient(180deg, #09030f 0%, #150926 50%, #0d0614 100%);
       background-attachment: fixed;
+      background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+      background-position: center center;
       color: var(--text);
       line-height: 1.6;
       padding: 20px;
