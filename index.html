@@ -244,6 +244,73 @@
       font-size: 0.95rem;
     }
 
+    /* PROSPECT GUIDELINES & DRESS CODE STYLES */
+    .prospect-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .outfit-card {
+      background: rgba(10, 4, 20, 0.8);
+      border: 1px solid rgba(255, 0, 127, 0.3);
+      border-radius: 6px;
+      padding: 20px;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .outfit-card h4 {
+      font-family: 'Teko', sans-serif;
+      font-size: 1.5rem;
+      color: var(--neon-cyan);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border-glow);
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+
+    .outfit-list {
+      list-style-type: none;
+    }
+
+    .outfit-list li {
+      color: var(--text);
+      font-size: 0.95rem;
+      padding: 6px 0;
+      border-bottom: 1px rgba(255, 255, 255, 0.05) dashed;
+      display: flex;
+      align-items: center;
+    }
+
+    .outfit-list li::before {
+      content: "•";
+      color: var(--neon-pink);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .outfit-list li:last-child {
+      border-bottom: none;
+    }
+
+    .phase-badge {
+      display: inline-block;
+      background: rgba(0, 240, 255, 0.1);
+      border: 1px solid var(--neon-cyan);
+      color: var(--neon-cyan);
+      font-family: 'Teko', sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
     /* GALLERY IMAGES */
     .gallery-grid {
       display: grid;
@@ -498,11 +565,45 @@
       <h2>Enlistment Requirements</h2>
       <div class="card">
         <p style="margin-bottom: 15px;">To patch in with Holy Deities MC, you must meet the following criteria:</p>
-        <ul style="margin-left: 20px; color: var(--muted);">
+        <ul style="margin-left: 20px; color: var(--muted); margin-bottom: 25px;">
           <li>Active GTA Online player with a working microphone and Discord account</li>
           <li>Own and ride a chopper or bagger class motorcycle</li>
           <li>Willingness to start as a Prospect and earn your Full Patch</li>
         </ul>
+
+        <div class="phase-badge">Prospect Phase: 1 Month or Less</div>
+
+        <div class="prospect-grid">
+          <!-- Male / General Outfit Card -->
+          <div class="outfit-card">
+            <h4>Prospect Stage (Male Outfit)</h4>
+            <p style="color: var(--muted); font-size: 0.85rem; margin-bottom: 10px;">Mandatory uniform during the Probate phase:</p>
+            <ul class="outfit-list">
+              <li>Black Hair, No Facepaints unless approved</li>
+              <li>Full Black Leather Jacket (56)</li>
+              <li>Black Straight Chinos (Chino's Section)</li>
+              <li>Black Harness Boots (Motorcycle Boots)</li>
+              <li>Any Black Biker Tshirt</li>
+              <li>Black Body Armour</li>
+              <li>Black Leather Gloves</li>
+              <li>Skull Mask</li>
+            </ul>
+          </div>
+
+          <!-- Female Outfit Card -->
+          <div class="outfit-card">
+            <h4>Prospect Stage (Female Version)</h4>
+            <p style="color: var(--muted); font-size: 0.85rem; margin-bottom: 10px;">Mandatory uniform during the Probate phase:</p>
+            <ul class="outfit-list">
+              <li>Black Hair, No Facepaints unless approved</li>
+              <li>Black Sweater (4)</li>
+              <li>Black Straight Chinos (Chino's Section)</li>
+              <li>Black Skate Shoes (2)</li>
+              <li>Black Leather Gloves</li>
+              <li>Skull Mask</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
