@@ -226,6 +226,39 @@
       font-family: 'Arial', sans-serif;
       font-size: 0.9rem;
     }
+
+    /* HIERARCHY STYLES */
+    .hierarchy-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .hierarchy-item {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .hierarchy-role {
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      font-size: 1.2rem;
+      color: #fff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hierarchy-members {
+      color: var(--muted);
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
   </style>
 </head>
 <body>
@@ -264,6 +297,31 @@
       <p style="color: var(--muted); font-size: 1.1rem;">
         Born in the asphalt heat of Los Santos and forged in fire, the Holy Deities MC is an outlaw motorcycle club operating on pure discipline, heavy iron, and absolute loyalty. We don’t ask for respect—we claim it on two wheels.
       </p>
+    </section>
+
+    <!-- CLUB HIERARCHY SECTION -->
+    <section>
+      <h2>Club Hierarchy</h2>
+      <ul class="hierarchy-list">
+        <li class="hierarchy-item"><span class="hierarchy-role">National Chairmen</span> <span class="hierarchy-members">holy.vici & holy.camno</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">National Vice Chairman</span> <span class="hierarchy-members">holy.jaekar</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">National Security Advisor</span> <span class="hierarchy-members">holy.ceo</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">Chairman’s Advisor</span> <span class="hierarchy-members">holy.pete</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">LS President</span> <span class="hierarchy-members">holy.menace</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">LS Vice President</span> <span class="hierarchy-members">holy.lynix</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">LS Charter Advisor</span> <span class="hierarchy-members">holy.kipper</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">LS Sergeant At Arms</span> <span class="hierarchy-members">OPEN</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">LS War Lord</span> <span class="hierarchy-members">holy.zuko</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">LS Lieutenant At Arms</span> <span class="hierarchy-members">holy.blackfire & holy.opps</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">LS Head Enforcer</span> <span class="hierarchy-members">OPEN</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">LS Enforcer</span> <span class="hierarchy-members">holy.robberto</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">LS Secretary</span> <span class="hierarchy-members">holy.prometheus</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">LS Road Captain</span> <span class="hierarchy-members">holy.lv</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">LS Tailgunner</span> <span class="hierarchy-members">holy.havoc</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">LS Chaplain</span> <span class="hierarchy-members">holy.lynix</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">Full Patches</span> <span class="hierarchy-members">holy.instincts, holy.python, holy.caliga, holy.leo, holy.meetch, holy.spina, holy.burgandy, holy.error</span></li>
+        <li class="hierarchy-item"><span class="hierarchy-role">Prospects</span> <span class="hierarchy-members">holy.tdot, holy.calvin, holy.slits, holy.zinci, holy.packets, holy.tech</span></li>
+      </ul>
     </section>
 
     <!-- EVENT GALLERY SECTION -->
